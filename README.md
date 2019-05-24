@@ -1,2 +1,2 @@
 # messageApiTraining
-LINEのMessage APIの練習用コードです。
+LINEのMessaging APIの練習用コードです。
