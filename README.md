@@ -29,3 +29,9 @@ messagingApiTraining
 }
 
 ```
+
+また、環境変数の登録を以下のような形で行います。  
+
+```bash
+firebase functions:config:set channel.secret="your secret key" channel.accesstoken="your accesstoken"
+```
