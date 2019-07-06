@@ -1,37 +1,11 @@
-# messagingApiTraining
-LINEのMessaging APIの練習用コードです。[この記事](https://qiita.com/ufoo68/items/f0ba45347b226c8afcd8)を参照してください。  
+# このレポジトリについて
+[ROHMのハッカソン](https://mashupawards.connpass.com/event/132980/)で作ったLINE Bot用のソースコードです。</br>
 
-また、デプロイ環境は[Firebase](https://console.firebase.google.com/)をオススメします本レポジトリをそのままcloneしてもらった後に、  
+## 使用技術
 
-```
-messagingApiTraining
-```
-
-上記のプロジェクト名で[Firebaseのコンソール上](https://console.firebase.google.com/)よりプロジェクト作成を行ってください。  
-また、firebase.jsonは以下のように設定しておくと上記の記事の内容通りにデプロイ可能です。  
-
-```js
-{
-  "hosting": {
-    "public": "./",
-    "rewrites": [
-      {
-        "source": "/webhook",
-        "function": "app"
-      }
-    ],
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
-}
-
-```
-
-また、環境変数の登録を以下のような形で行います。  
-
-```bash
-firebase functions:config:set channel.secret="your secret key" channel.accesstoken="your accesstoken"
-```
+- MessagingAPI
+  - push message
+- Firebase
+  - function
+- node.js
+  - express
